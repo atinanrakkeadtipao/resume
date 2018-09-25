@@ -1,20 +1,294 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body id="page-top">
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="data:image/jpeg;base64,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" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/about/#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">Clarence
+          <span class="text-primary">Taylor</span>
+        </h1>
+        <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+          <a href="mailto:name@email.com">name@email.com</a>
+        </div>
+        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Senior Web Developer</h3>
+            <div class="subheading mb-3">Intelitec Solutions</div>
+            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2013 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Web Developer</h3>
+            <div class="subheading mb-3">Intelitec Solutions</div>
+            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2011 - March 2013</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Junior Web Designer</h3>
+            <div class="subheading mb-3">Shout! Media Productions</div>
+            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2010 - December 2011</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Web Design Intern</h3>
+            <div class="subheading mb-3">Shout! Media Productions</div>
+            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2008 - June 2010</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Colorado Boulder</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Computer Science - Web Development Track</div>
+            <p>GPA: 3.23</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2006 - May 2010</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">James Buchanan High School</h3>
+            <div class="subheading mb-3">Technology Magnet Program</div>
+            <p>GPA: 3.56</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2002 - May 2006</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <div class="my-auto">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+  <script>
+  (function($) {
+    "use strict"; // Start of use strict
+  
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      }
+    });
+  
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+      target: '#sideNav'
+    });
+  
+  })(jQuery); // End of use strict
+  </script>
+  
+
+</body>
